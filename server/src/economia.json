@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nome": "Introdução à Economia",
+    "autor": "N. Gregory Mankiw",
+    "edição": "8ed",
+    "editora": "Cengage Learning",
+    "ISBN-10": "8522127913",
+    "descrição": "O domínio dos princípios econômicos fundamentais por economistas, administradores, contadores, engenheiros, até políticos, operadores do comércio e de relações internacionais, entre outros, é crucial, e é neste sentido que a obra de Mankiw vem preencher uma enorme lacuna editorial. Trata-se do melhor livro de Introdução à economia disponível. O autor, emérito professor de Harvard, é considerado o maior especialista da matéria, pela abrangência e profundidade científica e explanações práticas apresentadas. O livro tem ampla aceitação global, sendo o texto preferido de professores e estudantes. Colaboram, para tanto, a erudição do autor, o projeto inovador e criativo da obra, além da linguagem amigável, clara e eficiente, assim como os inúmeros recursos disponíveis no livro e na internet. Obra inigualável, trata-se de instrumento de extrema efetividade didático-pedagógica para o processo eficaz e consistente do ensino-aprendizagem da disciplina."
+  },
+  {
+    "id": 2,
+    "nome": "Princípio de Macroeconomia",
+    "autor": "N. Gregory Mankiw",
+    "edição": "3ed",
+    "editora": "Cengage Learning",
+    "ISBN-10": "852211188X",
+    "descrição": "O estudo de economia é um dos mais fascinantes e complexos de todas as ciências. Constitui-se, portanto, em estimulante desafio o domínio dos seus princípios fundamentais, conjugados com a necessidade do entendimento das inúmeras dificuldades com que a economia global vem se defrontando. Para melhor compreender o mundo e poder participar ativamente dele é preciso ter à mão um manual completo e atualizado. Esta obra, além dos ferramentais consagrados, dispõe também das mais recentes descobertas da economia e dos instrumentos de política econômica para utilizá-la. Pensando nisso, N. G. Mankiw escreveu, em linguagem clara e amigável, Introdução à economia, levando em conta três razões principais que, segundo ele, o estudante tem para aprender economia: entender o mundo em que vive; ser um participante mais perspicaz da economia; e compreender melhor os potenciais e os limites da política econômica. Para atingir esses objetivos, o autor, além de uma metodologia eficaz de ensino, empregou diversas ferramentas de aprendizagem efetiva que se repetem ao longo do livro, como Saiba mais sobre..., Estudos de caso, Notícias, Conceitos-chave, Testes rápidos, Resumos, Questões para revisão, Problemas e aplicações e Glossário. Para tanto, na 6ª edição do livro muitos conceitos novos foram introduzidos e outros tantos revistos e atualizados."
+  },
+  {
+    "id": 3,
+    "nome": "Princípio de Microeconomia",
+    "autor": "N. Gregory Mankiw",
+    "edição": "4ed",
+    "editora": "Cengage Learning",
+    "ISBN-10": "6555584068",
+    "descrição": "Diante da revolução tecnológica, alguns empregos podem estar em risco, porém, aqueles cujas atividades requeiram embasamento econômico em suas inúmeras aplicações terão seu lugar se os profissionais dominarem as técnicas de suas especialidades e o embasamento econômico requerido O domínio dos princípios econômicos fundamentais por esses profissionais é crucial, e é neste sentido que a obra de Mankiw vem preencher uma enorme lacuna editorial. Princípios de microeconomia é parte do melhor livro de Introdução à economia disponível."
+  }
+]

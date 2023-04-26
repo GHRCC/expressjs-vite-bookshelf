@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "nome": "História do Brasil",
+    "autor": "Bóris Fausto",
+    "edição": "14ed",
+    "editora": "Edusp",
+    "ISBN-10": "8531413524",
+    "descrição": "Cobrindo um período de mais de quinhentos anos, desde as raízes da colonização portuguesa até nossos dias, Boris Fausto narra aqui os fatos mais importantes da história brasileira. Ao analisar minuciosamente as grandes linhas de força que indicam o sentido de nossa formação, o autor detém-se no estudo de instituições fundamentais, como o sistema colonial, o sistema escravista e os regimes autoritários do século XX, dando ênfase às práticas sociopolíticas, sem deixar de enfrentar questões polêmicas, como as razões do abandono da escravidão dos índios pelos portugueses e a opção pelos africanos; a manutenção da unidade territorial brasileira em contraposição à fragmentação das colônias espanholas; ou ainda a difícil transição do regime autoritário para o democrático, nas últimas décadas. Esta nova edição contém uma atualização histórica, de autoria do sociólogo Sérgio Fausto, abrangendo o período que vai do fim da presidência de José Sarney (1990) aos dois mandatos de Luiz Inácio Lula da Silva (2002-2009)."
+  },
+  {
+    "id": 2,
+    "nome": "Brasil: uma biografia",
+    "autor": "Lilia M. Schwarcz; Heloisa M. Starling",
+    "edição": "2ed",
+    "editora": "Companhia das Letras",
+    "ISBN-10": "853592566X",
+    "descrição": "Aliando texto acessível e agradável, vasta documentação original e rica iconografia, Lilia Moritz Schwarcz e Heloisa Starling propõem uma nova (e pouco convencional) história do Brasil. Nessa travessia de mais de quinhentos anos, se debruçam não somente sobre a 'grande história' mas também sobre o cotidiano, a expressão artística e a cultura, as minorias, os ciclos econômicos e os conflitos sociais (muitas vezes subvertendo as datas e os eventos consagrados pela tradição). No fundo da cena, mantêm ainda o diálogo constante com aqueles autores que, antes delas, se lançaram na difícil empreitada de tentar interpretar ou, pelo menos, entender o Brasil. A história que surge dessas páginas é a de um longo processo de embates e avanços sociais inconclusos, em que a construção falhada da cidadania, a herança contraditória da mestiçagem e a violência aparecem como traços persistentes. Esta edição inclui novo pós-escrito das autoras, que joga luz sobre a situação recente do país: a democracia posta em xeque, os desdobramentos das manifestações populares e o impeachment de Dilma Rousseff, entre outros acontecimentos marcantes do últimos anos"
+  },
+  {
+    "id": 3,
+    "nome": "A Construção da Ordem e Teatro das Sombras",
+    "autor": "José Murilo de Carvalho",
+    "edição": "15ed",
+    "editora": "Civilização Brasileira",
+    "ISBN-10": "8520006183",
+    "descrição": "A construção da ordem e teatro das sombras, de José Murilo de Carvalho, são verdadeiros marcos. Indispensáveis pelo vigor e acuidade das análises críticas das elites políticas brasileiras no século XIX. José Mutilo lança, ainda, nova luz ao Império Brasileiro, suas mazelas e desvarios. Publicados aqui em conjunto, os textos reunidos foram apresentados pelo autor como tese de doutorado na Universidade de Stanfors, em dezembro de 1974. A primeira parte chegou ao mercado em 1980 sob o título de 'A Construção da Ordem: a elite política imperial'. A segunda e última ganhou o nome de 'Teatro de sombras. A política imperial', e teve primeira edição em 1988."
+  }
+]
