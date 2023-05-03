@@ -23,9 +23,19 @@ app.get("/", (req: any, res: any) => {
   return res.send("hello");
 });
 
-app.get("/historia-brasil", function (req: any, res: any) {
+//método http app.get
+//a function representa o middleware
+
+app.get("/historia-brasil/:id", function (req: any, res: any) {
+  const { id } = req.params;
   const readable = fs.readFileSync(historiaBrasil).toString(); //fs com o método readFileSync lê o meu arquivo JSON. nesse caso, botei dentro de uma constante readable
-  res.send(readable); //dando a resposta com o método send de readable, a constante com o string que foi lido em readFileSync
+  const readableObject = JSON.parse(readable);
+  const readableFilter = readableObject.filter((item: any) => {
+    return item.id == id;
+  });
+  console.log(id);
+
+  res.send(readableFilter); //dando a resposta com o método send de readable, a constante com o string que foi lido em readFileSync
 });
 app.get("/economia", function (req: any, res: any) {
   const readable = fs.readFileSync(economia).toString();

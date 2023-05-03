@@ -3,12 +3,15 @@ import { Link } from "react-router-dom"; //importando react-router-dom para cria
 type LinkButtonProps = {
   //criando as propriedades de linkbutton
   to: string; //o link
-  children: string; //o nome do botão
+  children: React.ReactNode; //esse link pode receber um elemento do react
 };
 
 export default function LinkButton(props: LinkButtonProps) {
   return (
-    <Link to={props.to} className="bg-white">
+    <Link
+      to={props.to}
+      className="bg-white w-24 flex justify-center border-none rounded-md"
+    >
       {props.children}
     </Link>
   );
