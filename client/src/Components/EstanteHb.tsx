@@ -20,12 +20,26 @@ export function EstanteHB() {
     const dados = await getData(1);
     setEstado(dados);
   }
+
+  function limparDados() {
+    setEstado([]);
+  }
+
   return (
-    <div className="my-12 h-96">
-      <h1>{estado[0]?.autor}</h1>
-      <h1>Estante</h1>
-      <img src={Boris} className="h-80" onClick={pegarDados} />
-      {/* <span>{JSON.stringify(estado, "", null)}</span> */}
+    <div className="my-12 h-2/4 bg-white">
+      <div>
+        <img
+          src={Boris}
+          className="h-80 mx-3"
+          onClick={estado.length ? limparDados : pegarDados}
+        />
+        <h1 className="top-16 mx-3">{estado[0]?.nome}</h1>
+        <h1 className="top-16 mx-3">{estado[0]?.autor}</h1>
+        <h1 className="top-16 mx-3">{estado[0]?.edicao}</h1>
+        <h1 className="top-16 mx-3">{estado[0]?.editora}</h1>
+        <h1 className="top-16 mx-3">{estado[0]?.["ISBN-10"]}</h1>
+      </div>
+      <h1 className="top-16 mx-3">{estado[0]?.descricao}</h1>
     </div>
   );
 }
