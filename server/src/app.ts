@@ -37,13 +37,47 @@ app.get("/historia-brasil/:id", function (req: any, res: any) {
 
   res.send(readableFilter); //dando a resposta com o método send de readable, a constante com o string que foi lido em readFileSync
 });
-app.get("/economia", function (req: any, res: any) {
-  const readable = fs.readFileSync(economia).toString();
-  res.send(readable);
+app.get("/economia/:id", function (req: any, res: any) {
+  const { id } = req.params;
+  const readable = fs.readFileSync(economia).toString(); //fs com o método readFileSync lê o meu arquivo JSON. nesse caso, botei dentro de uma constante readable
+  const readableObject = JSON.parse(readable);
+  const readableFilter = readableObject.filter((item: any) => {
+    return item.id == id;
+  });
+  console.log(id);
+
+  res.send(readableFilter); //dando a resposta com o método send de readable, a constante com o string que foi lido em readFileSync
 });
-app.get("/politica-internacional", function (req: any, res: any) {
-  const readable = fs.readFileSync(politicaInternacional).toString();
-  res.send(readable);
+app.get("/politica-internacional/:id", function (req: any, res: any) {
+  const { id } = req.params;
+  const readable = fs.readFileSync(politicaInternacional).toString(); //fs com o método readFileSync lê o meu arquivo JSON. nesse caso, botei dentro de uma constante readable
+  const readableObject = JSON.parse(readable);
+  const readableFilter = readableObject.filter((item: any) => {
+    return item.id == id;
+  });
+  console.log(id);
+
+  res.send(readableFilter); //dando a resposta com o método send de readable, a constante com o string que foi lido em readFileSync
+});
+
+app.put("/historia-brasil/:id", function (req: any, res: any) {
+  const { id } = req.params;
+  const { titulo, autor, edicao, editora, isbn, descricao } = req.body;
+  const readable = fs.readFileSync(historiaBrasil).toString(); //fs com o método readFileSync lê o meu arquivo JSON. nesse caso, botei dentro de uma constante readable
+  const readableObject = JSON.parse(readable);
+  const readableFind = readableObject.find((item: any) => item.id === id);
+  if (readableFind) {
+    readableFind.titulo = titulo;
+    readableFind.autor = autor;
+    readableFind.edicao = edicao;
+    readableFind.editora = editora;
+    readableFind.isbn = isbn;
+    readableFind.descricao = descricao;
+
+    return readableFind;
+  }
+
+  fs.writeFileSync(historiaBrasil, JSON.stringify(readableFind));
 });
 
 app.listen(port, () => {

@@ -9,6 +9,9 @@ import { TextField } from "../Components/TextField.js";
 const texts = {
   titulo: "Editar livro",
   autorPlaceholder: "Autor",
+  edicaoPlaceholder: "Edição",
+  editoraPlaceholder: "Editora",
+  isbnPlaceholder: "ISBN-10",
   createLivroSucess: "o livro foi editado com sucesso",
   creatLivroFailure: "houve um erro ao editar o livro :(",
   tituloPlaceholder: "Digite o titulo",
@@ -17,8 +20,11 @@ const texts = {
 };
 
 const initialEditLivro = {
-  nome: "",
+  titulo: "",
   autor: "",
+  edicao: "",
+  editora: "",
+  isbn: "",
   descricao: "",
 };
 
@@ -37,7 +43,6 @@ export function EditarLivro() {
     const response = await putLivro(livroId, form);
     if (response.success) {
       toast(texts.createLivroSucess);
-      navigate("/");
     } else {
       toast(texts.creatLivroFailure);
     }
@@ -53,13 +58,29 @@ export function EditarLivro() {
       >
         <TextField
           placeholder={texts.tituloPlaceholder}
-          value={form.nome}
-          onChange={(nome) => setForm({ ...form, nome })}
+          value={form.titulo}
+          onChange={(titulo) => setForm({ ...form, titulo })}
         />
         <TextField
           placeholder={texts.autorPlaceholder}
           value={form.autor}
           onChange={(autor) => setForm({ ...form, autor })}
+        />
+        <TextField
+          placeholder={texts.edicaoPlaceholder}
+          value={form.edicao}
+          onChange={(edicao) => setForm({ ...form, edicao })}
+        />
+
+        <TextField
+          placeholder={texts.editoraPlaceholder}
+          value={form.editora}
+          onChange={(editora) => setForm({ ...form, editora })}
+        />
+        <TextField
+          placeholder={texts.isbnPlaceholder}
+          value={form.isbn}
+          onChange={(isbn) => setForm({ ...form, isbn })}
         />
         <TextArea
           placeholder={texts.conteudoPlaceholder}
