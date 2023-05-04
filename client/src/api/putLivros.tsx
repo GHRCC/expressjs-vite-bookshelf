@@ -19,6 +19,6 @@ export async function putLivro(
   id: number,
   livro: PutLivrosInput
 ): Promise<PutLivrosOutput> {
-  const response = await api.put(`/historia-brasil/4`, livro);
+  const response = await api.put(`/historia-brasil/${id}`, livro);
   return response.data;
 }

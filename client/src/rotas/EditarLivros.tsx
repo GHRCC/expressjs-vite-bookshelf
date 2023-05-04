@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Params, useNavigate, useParams } from "react-router-dom";
 import { getData } from "../api/getData.js";
 import { putLivro } from "../api/putLivros.js";
 import { toast, ToastContainer } from "react-toastify";
@@ -27,25 +27,37 @@ const initialEditLivro = {
   isbn: "",
   descricao: "",
 };
+interface Form {
+  titulo: string;
+  autor: string;
+  edicao: string;
+  editora: string;
+  isbn: string;
+  descricao: string;
+}
 
 export function EditarLivro() {
-  const params = useParams();
+  const params = useParams<Params>();
   const navigate = useNavigate();
 
   const livroId = Number(params.id);
-  const [form, setForm] = useState(initialEditLivro);
+  const [form, setForm] = useState<Form>(initialEditLivro);
   useEffect(() => {
     getData(livroId).then((livro) => setForm(livro));
   }, [livroId]);
 
-  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(
+    event: React.FormEvent<HTMLFormElement>
+  ): Promise<void> {
     event.preventDefault();
     const response = await putLivro(livroId, form);
     if (response.success) {
-      toast(texts.createLivroSucess);
+      toast.success(texts.createLivroSucess);
     } else {
-      toast(texts.creatLivroFailure);
+      toast.error(texts.creatLivroFailure);
     }
+    console.log(form);
+    console.log(response);
   }
 
   return (
@@ -87,7 +99,9 @@ export function EditarLivro() {
           value={form.descricao}
           onChange={(descricao) => setForm({ ...form, descricao })}
         />
-        <button type="submit">{texts.submitButtonLabel}</button>
+        <button onClick={() => console.log(form)} type="submit">
+          {texts.submitButtonLabel}
+        </button>
       </form>
     </div>
   );
